@@ -3,6 +3,8 @@ Created on Jan 28, 2016
 
 @author: raydelto
 '''
+import ray_adventure
+import mitch_adventure
 
 def credits():
     print "First Dominations by Raydelto Hernandez and Mitch Morrison\n\n"
@@ -21,12 +23,13 @@ def start():
     while choice not in (1,2,3):
         choice= input("1- Choose Mitch as your guide\n2- Choose Ray as your guide\n3- Continue alone\n")
         if choice == 1:
-            pass
+            mitch_adventure.start()
         elif choice == 2:
-            pass
+            ray_adventure.start()
         elif choice == 3:
-            pass
+            print "You ran away, fall to the ground, and suddenly feel a sharped object stabbing you repeteadly, everything is blurry, everything is black..."
+            print "\nGAME OVER\n"
         else:
-            pass    
+            print "Please select a valid option"    
     
     
